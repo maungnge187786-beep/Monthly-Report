@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>လစဉ် ဝင်ငွေ / ထွက်ငွေ စာရင်းရှင်းတမ်း</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Pyidaungsu', 'Segoe UI', sans-serif; background-color: #f4f6f9; color: #333; padding: 30px 15px; }
+        .container { max-width: 900px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #1f4e79; padding-bottom: 15px; }
+        .header h1 { color: #1f4e79; font-size: 24px; margin-bottom: 5px; }
+        .header p { color: #666; font-size: 14px; }
+        .summary-boxes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 30px; }
+        .box { padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; }
+        .box-income { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .box-expense { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .box-balance { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        .box span { display: block; font-size: 14px; margin-bottom: 5px; color: #555; }
+        .box div { font-size: 18px; }
+        .tables-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        h3 { margin-bottom: 10px; font-size: 16px; padding-bottom: 5px; }
+        .income-title { color: #155724; border-bottom: 2px solid #28a745; }
+        .expense-title { color: #721c24; border-bottom: 2px solid #dc3545; }
+        table { width: 100%; border-collapse: collapse; background: #fff; margin-bottom: 20px; }
+        th, td { border: 1px solid #dee2e6; padding: 10px; font-size: 14px; }
+        th { background-color: #f8f9fa; font-weight: bold; text-align: left; }
+        td.amount { text-align: right; }
+        .table-total { background-color: #f1f3f5; font-weight: bold; }
+        @media (max-width: 768px) {
+            .summary-boxes { grid-template-columns: 1fr; }
+            .tables-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>[ဘာသာရေးအဆောက်အအုံအမည်]</h1>
+        <p>၂၀၂၆ ခုနှစ်၊ ........................... လအတွက် တရားဝင် ဝင်ငွေ/ထွက်ငွေ စာရင်းရှင်းတမ်း</p>
+    </div>
+    <div class="summary-boxes">
+        <div class="box box-income">
+            <span>စုစုပေါင်း ဝင်ငွေ</span>
+            <div>၆,၃၅၀,၀၀၀ ကျပ်</div>
+        </div>
+        <div class="box box-expense">
+            <span>စုစုပေါင်း အသုံးစရိတ်</span>
+            <div>၅,၃၅၀,၀၀၀ ကျပ်</div>
+        </div>
+        <div class="box box-balance">
+            <span>လက်ကျန်ငွေသား</span>
+            <div>၁,၀၀၀,၀၀၀ ကျပ်</div>
+        </div>
+    </div>
+    <div class="tables-grid">
+        <div>
+            <h3 class="income-title">ဝင်ငွေစာရင်း (Receipts)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>အကြောင်းအရာ</th>
+                        <th style="text-align: right;">ပမာဏ (ကျပ်)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>လအစ အဖွင့်လက်ကျန်</td><td class="amount">၅,၀၀၀,၀၀၀</td></tr>
+                    <tr><td>အလှူခံပုံးများမှရရှိငွေ</td><td class="amount">၈hoo,ooo</td></tr>
+                    <tr><td>အလှူရှင်များမှ သီးသန့်လှူဒါန်းငွေ</td><td class="amount">၅၀၀,၀၀၀</td></tr>
+                    <tr><td>အဆောက်အအုံ ငှားရမ်းခရငွေ</td><td class="amount">၅၀,၀၀၀</td></tr>
+                    <tr class="table-total"><td>စုစုပေါင်း ဝင်ငွေ</td><td class="amount">၆,၃၅၀,၀၀၀</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3 class="expense-title">အသုံးစရိတ်စာရင်း (Payments)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>အကြောင်းအရာ</th>
+                        <th style="text-align: right;">ပမာဏ (ကျပ်)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>အဆောက်အအုံ ပြုပြင်ထိန်းသိမ်းစရိတ်</td><td class="amount">၁,၂၀၀,၀၀၀</td></tr>
+                    <tr><td>ရေခဲ၊ မီတာခနှင့် ရုံးစရိတ်</td><td class="amount">၆၅၀,၀၀၀</td></tr>
+                    <tr><td>ဝန်ထမ်း/အမှုထမ်း လစာ</td><td class="amount">၂,၀၀၀,၀၀၀</td></tr>
+                    <tr><td>ဘာသာရေးပွဲတော်စရိတ်</td><td class="amount">၁,၅၀၀,၀၀၀</td></tr>
+                    <tr class="table-total"><td>စုစုပေါင်း အသုံးစရိတ်</td><td class="amount">၅,၃၅၀,၀၀၀</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
